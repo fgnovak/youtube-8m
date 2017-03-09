@@ -53,9 +53,9 @@ if __name__ == '__main__':
   flags.DEFINE_integer(
       "batch_size", 8192,
       "How many examples to process per batch.")
-  flags.DEFINE_string("feature_names", "mean_rgb", "Name of the feature "
+  flags.DEFINE_string("feature_names", "mean_rgb, mean_audio", "Name of the feature "
                       "to use for training.")
-  flags.DEFINE_string("feature_sizes", "1024", "Length of the feature vectors.")
+  flags.DEFINE_string("feature_sizes", "1024, 128", "Length of the feature vectors.")
 
 
   # Other flags.
